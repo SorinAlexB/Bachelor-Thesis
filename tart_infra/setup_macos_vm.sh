@@ -9,7 +9,6 @@ SSH_USER="test"
 SSH_PASSWORD="test"
 BASE_IMAGE="ghcr.io/cirruslabs/macos-sequoia-base:latest"
 
-# Culori pentru output
 GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
 RED='\033[0;31m'
