@@ -1,0 +1,60 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Data (large files — tracked separately)
+langchain_pipeline/data/chroma/
+langchain_pipeline/data/enterprise-attack.json
+langchain_pipeline/data/nvd-*.json
+langchain_pipeline/data/exploitdb.csv
+langchain_pipeline/data/feedback.jsonl
+langchain_pipeline/data/arena_results/
+langchain_pipeline/data/cross_platform/
+langchain_pipeline/data/elo_ratings.json
+
+# Model artifacts
+*.safetensors
+*.npz
+langchain_pipeline/adapters/*/adapters.safetensors
+langchain_pipeline/adapters/*/adapter_model.safetensors
+langchain_pipeline/adapters/*/0*.npz
+
+# Logs
+logs/
+*.jsonl
+!langchain_pipeline/adapters/*/train.jsonl
+
+# Reports
+reports/
+*.png
+*.html
+!langchain_pipeline/**/*.html
+
+# C++ build artifacts
+cpp_extensions/build/
+cpp_extensions/*.so
+cpp_extensions/*.pyd
+langchain_pipeline/security_cpp*.so
+langchain_pipeline/security_cpp*.pyd
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+
+# Environment
+.env
+*.env
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
